@@ -1,0 +1,285 @@
+---
+title: "New file"
+description: "Description of your new file."
+mode: "wide"
+---
+
+Overview
+
+This guide outlines the complete process of setting up, running, and analyzing A/B tests with PageFly to optimize your Shopify store's performance.
+
+Requirements
+
+● Published Theme: Your selected Shopify theme must be published. Unpublished themes prevent PageFly pages from appearing in A/B tests correctly. Publish your theme to ensure visibility.
+
+● Clear Objectives: Define what you want to test and what metrics matter most (conversion rate, add to cart rate, etc.) before starting your test.
+
+[sht-important]Important Note: A/B testing will be available exclusively for Pay-as-you-go pricing model (slot plans).[/sht-important]
+
+What is PageFly A/B Testing?
+
+PageFly A/B Testing is a feature that lets customers create two versions of the same page, show each version to different visitors, and measure which version performs better based on selected metrics like conversion rates. It's essentially a tool for making data-driven decisions about webpage design by directly comparing alternatives with real user behavior.
+
+The operational flow of PageFly A/B Testing works as follows:
+
+PageFly duplicate your current page (Control) into a Variant version
+
+You make design changes to the Variant version as desired
+
+You run tests to compare performance between Control and Variant
+
+You publish the winning version based on test results or your key metrics
+
+How To Create A/B Tests With PageFly
+
+Follow these steps to set up and run an effective A/B test:
+
+Step 1: Create an A/B Test 
+
+There are two main ways:
+
+Option A: From A/B tests listing
+
+Navigate to the A/B tests listing (CRO Center \> Manage A/B testing)
+
+Click "Create A/B test"
+
+Select your page in the modal 
+
+Note: 
+
+• Password pages cannot be used for A/B testing 
+
+• Pages that already have an active A/B test cannot be selected
+
+The page will open in the editor with the A/B testing drawer displayed and a test already created
+
+Option B: From the A/B testing drawer in the editor
+
+Open your page in the PageFly editor
+
+Click the A/B testing button in the side menu
+
+The A/B testing drawer will open
+
+Click “Create” to create the A/B testing
+
+Step 2: Configure Test Settings
+
+In the test setup drawer, configure the following settings:
+
+Test Information
+
+Test title: Enter a descriptive name for your test
+
+Test Visibility
+
+Select "Active" - When you publish after selecting this option, it will publish both the page (Control) and the test (Variant) together
+
+When Active is selected, you can also schedule the test for a future date
+
+The publish button will change to "Publish and start test" or "Publish and schedule test" when Active is selected
+
+Select "Inactive" - When you publish after selecting this option, it will only publish the page (Control) without the test (Variant)
+
+When Inactive is selected, the publish button will simply show "Publish"
+
+Only the Control version will be published in this case
+
+Pause the test when a winner is found: Optional setting to automatically pause the test
+
+When enabled, the test will automatically pause if one version reaches your desired win probability
+
+When disabled, the test will continue running until you manually pause it
+
+Traffic Allocation
+
+Page traffic tested: Allocate the percentage of your visitors that will become part of the test
+
+Use the slider to determine what portion of all page visitors will participate in the test
+
+You can test with 100% of traffic or a smaller percentage if you prefer
+
+Page versions:
+
+Control: Your original page version (marked as "A")
+
+Set the traffic split percentage for the Control version
+
+Variant: Your modified page version (marked as "B")
+
+Set the traffic split percentage for the Variant version
+
+For standard A/B testing and fastest sample collection, a 50/50 split between Control and Variant is recommended
+
+Test Values
+
+Goal metric: Select the primary metric you want to measure for determining success
+
+​​Options include Add to cart rate, Product View Rate, and PageFly event’s conversion rate
+
+The system will track this metric to determine which version performs better
+
+Desired win probability: Set the statistical confidence level required to declare a winner
+
+Recommended setting is 95%, which means there's a 95% certainty that the results aren't due to random chance
+
+Higher percentages provide more statistical confidence but require more data and time
+
+Step 3: Design Your Variant
+
+After configuring test settings:
+
+Switch between Control and Variant versions using the version selector in the breadcrumb
+
+Make your desired design changes to the Variant version
+
+Step 4: Run the Test
+
+Depending on your visibility settings, you'll see different publish options:
+
+For Active tests:
+
+Click "Publish and start test"
+
+Confirm to publish both versions and begin collecting data
+
+For Scheduled tests:
+
+Click "Publish and schedule test"
+
+Both versions will be published but the test will start at the scheduled time
+
+For Inactive tests:
+
+Click "Publish"
+
+Only the Control version will be published
+
+Step 5: Monitor Test Progress
+
+Once your test is running, you can monitor its status:
+
+Live: Test is active with both versions published
+
+Both versions are published and visible to visitors based on your traffic split
+
+Initially shows "Gathering data..." until enough data is collected
+
+When a conclusion is reached, it will show the winning version, but the test remains Live until you take action
+
+Paused: Test has temporarily stopped collecting data
+
+The Variant version becomes unpublished when paused
+
+From here, you can continue the test, reset it, or create a new test
+
+Step 6: Analyze and Complete the Test
+
+When your test has collected sufficient data, you'll see one of these outcomes:
+
+Variant wins: The Variant is outperforming Control with your specified confidence level
+
+Indicated by "Variant is the winner, outperforming Control by x%(±y%)"
+
+Variant loses: The Control is performing better than the Variant
+
+Indicated by "Variant underperforms compared to Control by x%(±y%)"
+
+Inconclusive: Neither version shows significant performance difference. This can be indicated by one of three messages:
+
+“Variant isn't showing significant difference in performance" 
+
+“Variant is underperforming compared to Control by x% (±y%)” 
+
+“Variant is likely outperforming Control by x% but not yet a winner.
+
+Insufficient data: More time and visitors needed
+
+Indicated by "Gathering data..." with minimum requirements shown
+
+Step 7: Take Action Based on Results
+
+When your test is paused, you have three main options:
+
+Publish a version:
+
+Select either Control or Variant as the final design
+
+The selected version will be published, and the other will be deleted or saved as a new page
+
+The test will be marked as Complete
+
+Reset test:
+
+Return the test to Draft status, keeping all settings
+
+All previously collected data will be deleted
+
+Create a new test:
+
+Start a fresh test, with the Control version published by default and the Variant version will be deleted or saved as a new page
+
+The current test will be marked as Complete
+
+Viewing A/B Test Analytics
+
+PageFly provides dedicated analytics for your A/B tests:
+
+Access A/B test analytics from PageFly Analytics
+
+View all your tests with their statuses: Live, Paused, Scheduled, or Complete
+
+Click on a specific test to see detailed results including:
+
+Test conclusions and win probability
+
+Test configuration information
+
+Metrics statistics for both versions
+
+Visual charts comparing performance
+
+Important Notes About Live Viewing
+
+For Store Owners:
+
+You can select “Control” or “Variant” then view each version by clicking "View live" in the editor
+
+When viewing this way, the URL will have a "pf_prevent_redirecting" parameter
+
+Actions taken in this preview mode won't affect test results
+
+Avoid using these URLs in marketing campaigns as they bypass the testing mechanism
+
+For Your Customers:
+
+On a single device or browser session, users will only see either the Control or Variant version
+
+The assignment is random based on your traffic split settings
+
+If cookies are cleared, the random assignment happens again
+
+Data events are sent to analytics from both URLs
+
+Use Cases
+
+● Product Page Optimization: Test different layouts, copy, or call-to-action buttons to increase add-to-cart rates.
+
+● Landing Page Conversion: Compare different hero sections, messaging, or offers to see which drives more leads or sales.
+
+● Navigation Improvements: Test variations of page organization to improve user flow and reduce bounce rates.
+
+Frequently Asked Questions
+
+1. How long should I run my A/B test? 
+
+For conclusive results, tests should run for at least 7 days with minimum 500 visitors and 10 conversions per version. However, for more reliable results, running tests for 2-4 weeks is recommended. The priority should be getting sufficient traffic - the more traffic your test receives, the more statistically significant your results will be. Focus on maximizing visitor numbers rather than strictly adhering to a fixed timeframe.
+
+2. What is a good win probability percentage? 
+
+95% is the industry standard as it provides strong statistical confidence that your results aren't due to random chance.
+
+3. Can I test more than two versions at once? 
+
+Currently, PageFly A/B testing supports comparing one Control against one Variant version.
